@@ -5,7 +5,7 @@ def alphabet_position(text):
     text = text.lower()
     length = len(text)
     for i in range(0,length):
-        if  if (text[i:i+1] != " " and text[i:i+1] != "'" and text[i:i+1] != "." and text[i:i+1] != "?" and text[i:i+1] != "-" and text[i:i+1] != "_"):
+        if (text[i:i+1] != " " and text[i:i+1] != "'" and text[i:i+1] != "." and text[i:i+1] != "?" and text[i:i+1] != "-" and text[i:i+1] != "_"):
          word = word + str(myDict.get(text[i:i+1])) + " "
     return word.strip()
 
