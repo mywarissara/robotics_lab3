@@ -7,8 +7,8 @@ def alphabet_position(text):
     for i in range(0,length):
         if (text[i:i+1] != " " and text[i:i+1] != "'" and text[i:i+1] != "."):
          word = word + str(myDict.get(text[i:i+1])) + " "
-    print (word.strip())
+    return word.strip()
 
 if __name__ == "__main__":
     text = input("word:")
-    toNum(text)
+    alphabet_position(text)
